@@ -15,6 +15,14 @@
 		C95010AF28A8FD6800974D9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C95010AD28A8FD6800974D9D /* LaunchScreen.storyboard */; };
 		C95010BA28A8FD6800974D9D /* Virgin_DirectoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95010B928A8FD6800974D9D /* Virgin_DirectoryTests.swift */; };
 		C95010C528A8FD6800974D9D /* Virgin_DirectoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95010C428A8FD6800974D9D /* Virgin_DirectoryUITests.swift */; };
+		C95010DA28A8FEA400974D9D /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95010D928A8FEA400974D9D /* People.swift */; };
+		C95010E228A8FEBA00974D9D /* Rooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95010E128A8FEBA00974D9D /* Rooms.swift */; };
+		C950110C28A9017F00974D9D /* PeoplesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950110A28A9017F00974D9D /* PeoplesTableViewCell.swift */; };
+		C950110D28A9017F00974D9D /* PeoplesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C950110B28A9017F00974D9D /* PeoplesTableViewCell.xib */; };
+		C950111328A901C000974D9D /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950111128A901C000974D9D /* RoomTableViewCell.swift */; };
+		C950111428A901C000974D9D /* RoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C950111228A901C000974D9D /* RoomTableViewCell.xib */; };
+		C950111928A9020F00974D9D /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950111828A9020F00974D9D /* Parser.swift */; };
+		C950111F28A902D100974D9D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C950111E28A902D100974D9D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		C95010C028A8FD6800974D9D /* Virgin DirectoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Virgin DirectoryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95010C428A8FD6800974D9D /* Virgin_DirectoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Virgin_DirectoryUITests.swift; sourceTree = "<group>"; };
 		C95010C628A8FD6800974D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C95010D928A8FEA400974D9D /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		C95010E128A8FEBA00974D9D /* Rooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rooms.swift; sourceTree = "<group>"; };
+		C950110A28A9017F00974D9D /* PeoplesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesTableViewCell.swift; sourceTree = "<group>"; };
+		C950110B28A9017F00974D9D /* PeoplesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeoplesTableViewCell.xib; sourceTree = "<group>"; };
+		C950111128A901C000974D9D /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
+		C950111228A901C000974D9D /* RoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomTableViewCell.xib; sourceTree = "<group>"; };
+		C950111828A9020F00974D9D /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		C950111E28A902D100974D9D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +115,13 @@
 		C95010A128A8FD6600974D9D /* Virgin Directory */ = {
 			isa = PBXGroup;
 			children = (
+				C950111D28A902B200974D9D /* VD Constants */,
+				C95010D828A8FE8200974D9D /* Controller */,
+				C95010D728A8FE7800974D9D /* View Model */,
+				C95010D628A8FE7100974D9D /* View */,
+				C95010D528A8FE1D00974D9D /* Model */,
 				C95010A228A8FD6600974D9D /* AppDelegate.swift */,
 				C95010A428A8FD6600974D9D /* SceneDelegate.swift */,
-				C95010A628A8FD6600974D9D /* ViewController.swift */,
-				C95010A828A8FD6600974D9D /* Main.storyboard */,
 				C95010AB28A8FD6800974D9D /* Assets.xcassets */,
 				C95010AD28A8FD6800974D9D /* LaunchScreen.storyboard */,
 				C95010B028A8FD6800974D9D /* Info.plist */,
@@ -126,6 +145,51 @@
 				C95010C628A8FD6800974D9D /* Info.plist */,
 			);
 			path = "Virgin DirectoryUITests";
+			sourceTree = "<group>";
+		};
+		C95010D528A8FE1D00974D9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C95010D928A8FEA400974D9D /* People.swift */,
+				C95010E128A8FEBA00974D9D /* Rooms.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C95010D628A8FE7100974D9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C95010A828A8FD6600974D9D /* Main.storyboard */,
+				C950110A28A9017F00974D9D /* PeoplesTableViewCell.swift */,
+				C950110B28A9017F00974D9D /* PeoplesTableViewCell.xib */,
+				C950111128A901C000974D9D /* RoomTableViewCell.swift */,
+				C950111228A901C000974D9D /* RoomTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C95010D728A8FE7800974D9D /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				C950111828A9020F00974D9D /* Parser.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		C95010D828A8FE8200974D9D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C95010A628A8FD6600974D9D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C950111D28A902B200974D9D /* VD Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C950111E28A902D100974D9D /* Constants.swift */,
+			);
+			path = "VD Constants";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +295,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C950111428A901C000974D9D /* RoomTableViewCell.xib in Resources */,
+				C950110D28A9017F00974D9D /* PeoplesTableViewCell.xib in Resources */,
 				C95010AF28A8FD6800974D9D /* LaunchScreen.storyboard in Resources */,
 				C95010AC28A8FD6800974D9D /* Assets.xcassets in Resources */,
 				C95010AA28A8FD6600974D9D /* Main.storyboard in Resources */,
@@ -258,9 +324,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C95010DA28A8FEA400974D9D /* People.swift in Sources */,
 				C95010A728A8FD6600974D9D /* ViewController.swift in Sources */,
+				C950110C28A9017F00974D9D /* PeoplesTableViewCell.swift in Sources */,
+				C950111328A901C000974D9D /* RoomTableViewCell.swift in Sources */,
+				C950111928A9020F00974D9D /* Parser.swift in Sources */,
 				C95010A328A8FD6600974D9D /* AppDelegate.swift in Sources */,
 				C95010A528A8FD6600974D9D /* SceneDelegate.swift in Sources */,
+				C95010E228A8FEBA00974D9D /* Rooms.swift in Sources */,
+				C950111F28A902D100974D9D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
